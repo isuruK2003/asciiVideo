@@ -70,18 +70,18 @@ def get_filenames(direc):
 
 def main():
     frames_directory = "frames"
-    video_file = "C:/Users/DELL/Desktop/me_at_zoo.mp4" if os.name == 'nt' else "/mnt/c/Users/DELL/Desktop/me_at_zoo.mp4"
+    video_file = "C:/Users/DELL/Desktop/rr.mp4" if os.name == 'nt' else "/mnt/c/Users/DELL/Desktop/rr.mp4"
     
     if not os.path.isdir(frames_directory):
         os.makedirs(frames_directory)
     
-    # Extract frames
-    FrameCapture(video_file, 1000, frames_directory)
+    ### Extract frames
+    # FrameCapture(video_file, 1000, frames_directory)
     
-    # Get filename list
+    ### Get filename list
     filenames = get_filenames(frames_directory)
 
-    # Play video (uncomment only one at a time):
+    ### Play video (uncomment only one at a time):
 
     play_ascii_video_no_render(filenames, 1/60)
     # play_rendered_ascii_video(filenames, 1/60)
