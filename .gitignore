@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Frames directory
+frames/*
+
 # Distribution / packaging
 .Python
 build/
